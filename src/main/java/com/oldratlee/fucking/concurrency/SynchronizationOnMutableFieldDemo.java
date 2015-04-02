@@ -6,6 +6,21 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * @author Jerry Lee (oldratlee at gmail dot com)
+ *
+ *
+ * :beer: 在易变域上的同步
+
+常看到在易变域上的同步代码，并且写的同学会很自然觉得这样是安全和正确的。
+# 问题分析见文章链接：在易变域上的同步，对应的英文文章：Synchronization on mutable fields
+Demo类com.oldratlee.fucking.concurrency.SynchronizationOnMutableFieldDemo。
+
+Demo说明
+
+主线程中开启2个任务线程执行addListener。主线程最终结果检查。
+
+问题说明
+
+最终Listener的个数不对。
  */
 public class SynchronizationOnMutableFieldDemo {
     static final int ADD_COUNT = 10000;
@@ -14,6 +29,7 @@ public class SynchronizationOnMutableFieldDemo {
         // stub class
     }
 
+    private volatile Object lock=new Object();
     private volatile List<Listener> listeners = new CopyOnWriteArrayList<Listener>();
 
     public static void main(String[] args) throws Exception {
@@ -38,7 +54,11 @@ public class SynchronizationOnMutableFieldDemo {
     }
 
     public void addListener(Listener listener) {
-        synchronized (listeners) {
+
+        //本来这里是listeners，但是我们要保证lock住的这个field是不会变化的，因此我们更乐于锁一个自己建的object，防止出现问题
+        //private volatile Object lock=new Object();
+//        http://www.ibm.com/developerworks/library/j-concurrencybugpatterns/#N100E7
+        synchronized (lock) {
             List<Listener> results = new ArrayList<Listener>(listeners);
             results.add(listener);
             listeners = results;
