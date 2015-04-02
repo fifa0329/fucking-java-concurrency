@@ -15,6 +15,8 @@ public class Utils {
     public static synchronized void makeLoad() {
         if (isLoadMade) return;
 
+
+
         for (int i = 0; i < THREAD_COUNT; ++i) {
             executorService.submit(new Runnable() {
                 @Override
