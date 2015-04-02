@@ -9,7 +9,24 @@ import com.oldratlee.fucking.concurrency.util.Utils;
  * @see <a href="http://hllvm.group.iteye.com/group/topic/34932">请问R大 有没有什么工具可以查看正在运行的类的c/汇编代码</a>
  */
 public class NoPublishDemo {
-    boolean stop = false;
+
+//
+//    无同步的修改在另一个线程中读不到
+//
+//    Demo类com.oldratlee.fucking.concurrency.NoPublishDemo。
+//
+//    Demo说明
+//
+//    主线程中设置属性stop为true，以控制在main启动的任务线程退出。
+//
+//    问题说明
+//
+//    在主线程属性stop为true后，但任务线程持续运行，即任务线程中一直没有读到新值。
+//    其他线程能访问这个字段，但是不能第一时间知道他的修改！！！
+//    stop加上volatile关键字之后，这个字段的修改就能被其他线程访问到
+
+
+    volatile boolean stop = false;
 
     public static void main(String[] args) {
         // LoadMaker.makeLoad();
@@ -19,9 +36,11 @@ public class NoPublishDemo {
         Thread thread = new Thread(demo.getConcurrencyCheckTask());
         thread.start();
 
-        Utils.sleep(1000);
+        Utils.sleep(3000);
         System.out.println("Set stop to true in main!");
         demo.stop = true;
+        Utils.sleep(3000);
+
         System.out.println("Exit main.");
     }
 
