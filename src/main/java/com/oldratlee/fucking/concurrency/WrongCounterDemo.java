@@ -4,6 +4,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author Jerry Lee (oldratlee at gmail dot com)
+ * :beer: 无同步的并发计数结果不对
+
+Demo类com.oldratlee.fucking.concurrency.WrongCounterDemo。
+
+Demo说明
+
+主线程中开启2个任务线程执行并发递增计数。主线程最终结果检查。
  */
 public class WrongCounterDemo {
     private static final int INC_COUNT = 100000000;
