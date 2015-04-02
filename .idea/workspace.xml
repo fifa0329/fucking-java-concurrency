@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03ff45b2-71c5-46d7-9b49-c5400a69dd95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/StarvationBankAccount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/InvalidLongDemo.java" afterPath="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/InvalidLongDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/SynchronizationOnMutableFieldDemo.java" afterPath="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/SynchronizationOnMutableFieldDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java" afterPath="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java" />
     </list>
     <ignored path="fucking-java-concurrency.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,35 +26,7 @@
     <favorites_list name="fucking-java-concurrency" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="StarvationBankAccount.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/StarvationBankAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8194888" vertical-offset="0" max-vertical-offset="3591">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding>
-                <element signature="e#2571#2572#0" expanded="true" />
-                <element signature="e#2604#2605#0" expanded="true" />
-                <element signature="e#2652#2653#0" expanded="true" />
-                <element signature="e#2685#2686#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LiveLockBankAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2396" max-vertical-offset="3672">
-              <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,8 +48,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/BankAccountStarvationDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/BankAccountLiveLockDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/StarvationBankAccount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java" />
       </list>
     </option>
   </component>
@@ -157,6 +124,36 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="concurrency" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fucking-java-concurrency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fucking-java-concurrency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concurrency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LiveLockBankAccount.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -543,37 +540,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java</url>
-          <line>85</line>
+          <line>93</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java</url>
-          <line>91</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java</url>
-          <line>70</line>
+          <line>78</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java</url>
-          <line>54</line>
+          <line>62</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java</url>
-          <line>61</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java</url>
-          <line>75</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -740,8 +737,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oldratlee/fucking/concurrency/LiveLockBankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2396" max-vertical-offset="3672">
-          <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.51757187" vertical-offset="0" max-vertical-offset="3888">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
